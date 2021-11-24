@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education website design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script
+      src="https://kit.fontawesome.com/575b610ba3.js"
+      crossorigin="anonymous"
+    ></script>
+    <div id="division2">
+      <nav id="nav-id">
+        <div class="logo">
+          <img src="images/logo.png" alt="" />
+          <h2>Eduford</h2>
+        </div>
+        <div id="hello">
+          <i class="fa fa-times" id="cross" onclick="hide()"></i>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="course.html">Course</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" id="bar" onclick="show()"></i>
+      </nav>
+      <section id="subsection_about">
+        <h1>About Us</h1>
+      </section>
+    </div>
+
+    <section class="about_content">
+      <div class="about_box">
+        <h1>We are the world's largest University</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur
+          tempore culpa perferendis fugiat obcaecati deleniti quos illum
+          quisquam quae eum iste animi, consequuntur quibusdam nostrum impedit
+          nisi quas! Ea, cumque. Fugit porro distinctio asperiores nobis. Neque
+          sequi omnis, earum laudantium tenetur obcaecati qui error voluptatibus
+          aliquid, recusandae voluptatem cumque voluptas fugit, atque autem
+          dicta. Quis velit eaque adipisci veritatis aliquam, modi tempora! Non
+          laboriosam magni facere eveniet debitis molestiae! Ipsam.
+        </p>
+        <button class="btn btn-primary">Explore Now</button>
+      </div>
+      <div class="about_box">
+          <img src="images/about.jpg" alt="">
+      </div>
+    </section>
+    <footer>
+      <h3>About Us</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur in
+        ducimus voluptas ut iure error assumenda quia?<br />
+        Ea, consequatur maiores. Laborum, quisquam blanditiis porro cupiditate
+        voluptatum eligendi eius in molestias!
+      </p>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-linkedin"></i>
+
+      <p>Made with Sanjog Gaihre</p>
+    </footer>
+    <!-- Javascript for toggle menu  -->
+    <script>
+      var small = document.getElementById("hello");
+      function hide() {
+        small.style.right = "-200px";
+        small.style.display = "none";
+      }
+      function show() {
+        small.style.right = "-10px";
+        small.style.display = "block";
+      }
+    </script>
+  </body>
+</html>

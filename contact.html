@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Education website design</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <script
+      src="https://kit.fontawesome.com/575b610ba3.js"
+      crossorigin="anonymous"
+    ></script>
+    <div id="division2">
+      <nav id="nav-id">
+        <div class="logo">
+          <img src="images/logo.png" alt="" />
+          <h2>Eduford</h2>
+        </div>
+        <div id="hello">
+          <i class="fa fa-times" id="cross" onclick="hide()"></i>
+          <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="our_courses.html">Course</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <i class="fas fa-bars" id="bar" onclick="show()"></i>
+      </nav>
+      <section id="subsection_about">
+        <h1>Our Contact</h1>
+      </section>
+    </div>
+    <section class="location">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d774.2371397799598!2d83.75405629636758!3d27.97629854370759!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3995daa8d6aa8f75%3A0x9a25179ec38edacf!2sSiva%20mandir%2Cbhakunde!5e0!3m2!1sen!2snp!4v1637756967299!5m2!1sen!2snp"
+        width="80%"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </section>
+
+    <section class="contact_us">
+      <div class="outer_contact_box">
+        <div >
+          <div class="contact_page_box">
+            <i class="fas fa-home"></i>
+            <div>
+              <h4 style="margin-bottom: 10px">
+                Bhakunde, Shiva Parbati Mandir
+              </h4>
+              <p style="color: #777">Waling ,Syangja</p>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div class="contact_page_box">
+            <i class="fas fa-phone-square-alt"></i>
+            <div>
+              <h4 style="margin-bottom: 10px">+9779810102011</h4>
+              <p style="color: #777">Sunday to Friday, 10AM to 4PM</p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <form action="">
+            <input type="text" placeholder="Name">
+            <input type="email" placeholder="Enter Email address">
+            <input type="text" placeholder="Enter your subject">
+            <textarea placeholder="Message" id="" cols="30" rows="10"></textarea>
+            <button class="btn btn-primary">Send Message</button>
+        </form>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <h3>About Us</h3>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur in
+        ducimus voluptas ut iure error assumenda quia? Ea, consequatur maiores.
+        Laborum, quisquam blanditiis porro cupiditate voluptatum eligendi eius
+        in molestias!
+      </p>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fab fa-linkedin"></i>
+
+      <p>Made with Sanjog Gaihre</p>
+    </footer>
+    <!-- Javascript for toggle menu  -->
+    <script>
+      var small = document.getElementById("hello");
+      function hide() {
+        small.style.right = "-200px";
+        small.style.display = "none";
+      }
+      function show() {
+        small.style.right = "-10px";
+        small.style.display = "block";
+      }
+    </script>
+  </body>
+</html>
